@@ -39,6 +39,11 @@
     border-radius: 4px;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+     border: 1px solid var(--yellow, #ECD979);
+}
+
 @media screen and (max-width:767px) {
     
     .hero-button{
@@ -97,12 +102,7 @@
     .hero-button { 
         margin-left: 151px;
     }
-
-    .hero-button:hover,
-    .hero-button:focus{
-        border: 1px solid var(--yellow, #ECD979);
-    }
-
+   
     .hero{
         position: relative;
     }
@@ -115,5 +115,39 @@
 
     .hero-images-mapa{
         display: flex;
+    }
+}
+
+@media screen and (min-width:1280px){
+    /* .hero-button,
+    .hero-img,
+    .hero-title-gape{
+        display: flex;
+    } */
+
+    /* .hero-title{
+        display: inline-block;
+        width: 518px;
+    } */
+
+
+    .container{
+        display: flex;
+        
+    }
+
+    .hero-title{
+        order: 2;
+        padding-left: 40px;
+        margin-top: 44px;
+        margin-bottom: 40px;
+    }
+
+    .hero-img{
+        order: -1;
+    }
+
+    .hero-button{
+        order: 3;
     }
 }
