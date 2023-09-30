@@ -1,0 +1,119 @@
+
+.hero-title {
+    color: var(--white, #FCF9F9);
+    font-family: Manrope;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: -0.03em;
+    max-width: 335px;
+    margin-bottom: 20px;
+}
+
+.hero-title-color{
+    color:#ECD979;
+}
+
+.hero-button {
+    display: inline-flex;
+    height: 49px;
+    padding: 14px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    color: var(--white, #FCF9F9);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    background-color:#1C2225 ;
+}
+
+.hero-img {
+    border-radius: 4px;
+}
+
+@media screen and (max-width:767px) {
+    
+    .hero-button{
+        margin-left: 70px;
+    }
+
+    .hero-star,
+    .hero-mapa{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px)  {
+
+    .hero-star {
+        display: flex;
+        width: 115px;
+        row-gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 32px;
+    }
+
+    
+    .hero-images-star{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-star-item{
+        color: rgba(252, 249, 249, 0.40);
+        text-align: center;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.64px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-title{
+        width: 549px;
+        color: #FCF9F9;
+        font-family: Manrope;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.19;
+        letter-spacing: -0.03em;
+    }
+        
+    .hero-button { 
+        margin-left: 151px;
+    }
+
+    .hero-button:hover,
+    .hero-button:focus{
+        border: 1px solid var(--yellow, #ECD979);
+    }
+
+    .hero{
+        position: relative;
+    }
+
+    .hero-mapa{
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+    }
+
+    .hero-images-mapa{
+        display: flex;
+    }
+}
